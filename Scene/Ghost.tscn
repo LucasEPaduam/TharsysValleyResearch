@@ -1,0 +1,177 @@
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://Assets/AssetEnemie/RobotDark3.png" type="Texture" id=1]
+[ext_resource path="res://Assets/AssetEnemie/RobotDark2.png" type="Texture" id=2]
+[ext_resource path="res://Assets/AssetEnemie/RobotDark1.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Carac/GreenBall1.png" type="Texture" id=4]
+[ext_resource path="res://Assets/AssetEnemie/RobotEye2.png" type="Texture" id=5]
+[ext_resource path="res://Assets/AssetEnemie/WhiteEnemies1.png" type="Texture" id=6]
+[ext_resource path="res://Assets/AssetEnemie/DarkEnemie3.png" type="Texture" id=7]
+[ext_resource path="res://Assets/AssetEnemie/WhiteEnemies2.png" type="Texture" id=8]
+[ext_resource path="res://Assets/AssetEnemie/WhiteEnemies3.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Carac/GreenBall2.png" type="Texture" id=10]
+[ext_resource path="res://Assets/AssetEnemie/RobotEye1.png" type="Texture" id=11]
+[ext_resource path="res://Assets/AssetEnemie/DarkEnemie2.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Carac/GreenBall3.png" type="Texture" id=13]
+[ext_resource path="res://Assets/AssetEnemie/RobotEye3.png" type="Texture" id=14]
+[ext_resource path="res://Assets/AssetEnemie/DarkEnemie1.png" type="Texture" id=15]
+[ext_resource path="res://Scripts/Ghost.gd" type="Script" id=16]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 11 ), ExtResource( 5 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "blue",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "orange",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "pink",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 12 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "red",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 10 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "special",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 6.08276
+
+[sub_resource type="Animation" id=3]
+resource_name = "GoToNormal"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5, 2.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "set_color"
+}, {
+"args": [  ],
+"method": "set_color"
+} ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "Hide"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ "special" ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "Respawn"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "spawn"
+} ]
+}
+
+[node name="Ghost" type="AnimatedSprite"]
+position = Vector2( 40, 0 )
+frames = SubResource( 1 )
+animation = "special"
+playing = true
+script = ExtResource( 16 )
+
+[node name="Area" type="Area2D" parent="."]
+
+[node name="Shape" type="CollisionShape2D" parent="Area"]
+shape = SubResource( 2 )
+
+[node name="SpecialTimer" type="Timer" parent="."]
+wait_time = 8.0
+one_shot = true
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+anims/GoToNormal = SubResource( 3 )
+anims/Hide = SubResource( 5 )
+anims/RESET = SubResource( 4 )
+anims/Respawn = SubResource( 6 )
+
+[connection signal="timeout" from="SpecialTimer" to="." method="_on_SpecialTimer_timeout"]

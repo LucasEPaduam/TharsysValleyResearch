@@ -1,0 +1,179 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Audio/flight_maneuver_1.wav" type="AudioStream" id=1]
+[ext_resource path="res://Scripts/mainMenu.gd" type="Script" id=2]
+[ext_resource path="res://Assets/MontOlim.jpg" type="Texture" id=3]
+[ext_resource path="res://Assets/AssetEnemie/RobotDark1.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Carac/fl4.png" type="Texture" id=5]
+[ext_resource path="res://Assets/AssetEnemie/WhiteEnemies1.png" type="Texture" id=6]
+[ext_resource path="res://Assets/AssetEnemie/RobotEye1.png" type="Texture" id=7]
+[ext_resource path="res://Assets/AssetEnemie/DarkEnemie2.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Carac/kenpixel.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://Assets/Buttons/buttonlayer.png" type="Texture" id=10]
+[ext_resource path="res://Audio/health_1.wav" type="AudioStream" id=11]
+[ext_resource path="res://Assets/Buttons/buttonlayerpressed.png" type="Texture" id=12]
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+font_data = ExtResource( 9 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 9 )
+
+[node name="mainMenu" type="Node"]
+script = ExtResource( 2 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label2" type="Label" parent="CanvasLayer"]
+margin_left = 6.0
+margin_top = 210.0
+margin_right = 722.0
+margin_bottom = 270.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Thasis Valley"
+align = 1
+
+[node name="Label3" type="Label" parent="CanvasLayer"]
+margin_left = 6.0
+margin_top = 322.0
+margin_right = 722.0
+margin_bottom = 413.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Research"
+align = 1
+
+[node name="Credits" type="TextureButton" parent="CanvasLayer"]
+margin_left = 234.0
+margin_top = 569.0
+margin_right = 510.0
+margin_bottom = 705.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 12 )
+
+[node name="Label" type="Label" parent="CanvasLayer/Credits"]
+margin_left = 25.0
+margin_top = 49.0
+margin_right = 246.0
+margin_bottom = 95.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Credits"
+align = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer/Credits"]
+margin_left = 25.0
+margin_top = 248.0
+margin_right = 246.0
+margin_bottom = 294.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Play"
+align = 1
+
+[node name="control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="control"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 859.0
+margin_right = 682.0
+margin_bottom = 1240.0
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 7
+
+[node name="TextureRect2" type="TextureRect" parent="control"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 81.0
+margin_top = 1037.0
+margin_right = 93.0
+margin_bottom = 1100.0
+rect_scale = Vector2( 2, 2 )
+mouse_filter = 2
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="control"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 181.0
+margin_top = 988.0
+margin_right = 193.0
+margin_bottom = 1051.0
+rect_scale = Vector2( 2, 2 )
+mouse_filter = 2
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureRect4" type="TextureRect" parent="control"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 457.0
+margin_top = 993.0
+margin_right = 469.0
+margin_bottom = 1056.0
+rect_scale = Vector2( 2, 2 )
+mouse_filter = 2
+texture = ExtResource( 8 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureRect5" type="TextureRect" parent="control"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 552.0
+margin_top = 1035.0
+margin_right = 564.0
+margin_bottom = 1098.0
+rect_scale = Vector2( 2, 2 )
+mouse_filter = 2
+texture = ExtResource( 6 )
+expand = true
+stretch_mode = 5
+
+[node name="TextureRect6" type="TextureRect" parent="control"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 323.0
+margin_top = 865.0
+margin_right = 335.0
+margin_bottom = 928.0
+rect_scale = Vector2( 2, 2 )
+mouse_filter = 2
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 5
+
+[node name="Play" type="TextureButton" parent="control"]
+margin_left = 236.0
+margin_top = 768.0
+margin_right = 512.0
+margin_bottom = 909.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 12 )
+
+[node name="SoundInit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -30.587
+
+[node name="SoundButton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+volume_db = -14.857
+
+[connection signal="pressed" from="CanvasLayer/Credits" to="." method="_on_Credits_pressed"]
+[connection signal="pressed" from="control/Play" to="." method="_on_Play_pressed"]
