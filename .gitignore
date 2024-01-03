@@ -3,8 +3,10 @@
 
 # Godot-specific ignores
 .import/
+android/
 export.cfg
 export_presets.cfg
+Godot_v3.5.2-stable_export_templates.tpz
 
 # Imported translations (automatically generated from CSV files)
 *.translation
@@ -13,3 +15,4 @@ export_presets.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
