@@ -19,7 +19,7 @@ brancas que o levará a um nível superior onde a velocidade dos inimigos é aum
 elevando o nível de dificuldade.
 
 > O arquivo APK para instalação em um smartphone ANDROID está disponível no link abaixo.
-[TharsysValleyResearch_APK](https://www.codeblocks.org/downloads/)
+[TharsysValleyResearch_APK](https://github.com/LucasEPaduam/TharsysValleyResearch/blob/master/ThasisValleyResearch.apk)
 
 
 ## Objetivo
