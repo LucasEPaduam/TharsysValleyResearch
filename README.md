@@ -37,3 +37,16 @@ jogo, adaptadas ao modelo de interação para smartphones.
 
 ## Telas
 
+### Menu Inicial
+<img src="https://github.com/LucasEPaduam/PremioZumbi/blob/main/Imagens/telaInicial.PNG?raw=true">
+
+### Créditos 
+> Todos os artistas responsáveis pelos assets utilizados neste projeto estão listados nesta tela.
+<img src="https://github.com/LucasEPaduam/PremioZumbi/blob/main/Imagens/telaInicial.PNG?raw=true">
+
+### Labirinto / jogo
+<img src="https://github.com/LucasEPaduam/PremioZumbi/blob/main/Imagens/telaInicial.PNG?raw=true">
+
+### Game Over
+<img src="https://github.com/LucasEPaduam/PremioZumbi/blob/main/Imagens/telaInicial.PNG?raw=true">
+
