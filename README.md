@@ -38,15 +38,15 @@ jogo, adaptadas ao modelo de interação para smartphones.
 ## Telas
 
 ### Menu Inicial
-<img src="https://github.com/LucasEPaduam/PremioZumbi/blob/main/Imagens/telaInicial.PNG?raw=true">
+<img src="https://github.com/LucasEPaduam/TharsysValleyResearch/blob/master/imagens_telas/Screenshot%202023-10-16%20165200.png?raw=true">
 
 ### Créditos 
 > Todos os artistas responsáveis pelos assets utilizados neste projeto estão listados nesta tela.
-<img src="https://github.com/LucasEPaduam/PremioZumbi/blob/main/Imagens/telaInicial.PNG?raw=true">
+<img src="https://github.com/LucasEPaduam/TharsysValleyResearch/blob/master/imagens_telas/Screenshot%202023-10-16%20165450.png?raw=true">
 
 ### Labirinto / jogo
-<img src="https://github.com/LucasEPaduam/PremioZumbi/blob/main/Imagens/telaInicial.PNG?raw=true">
+<img src="https://github.com/LucasEPaduam/TharsysValleyResearch/blob/master/imagens_telas/Screenshot%202023-10-16%20165552.png?raw=true">
 
 ### Game Over
-<img src="https://github.com/LucasEPaduam/PremioZumbi/blob/main/Imagens/telaInicial.PNG?raw=true">
+<img src="https://github.com/LucasEPaduam/TharsysValleyResearch/blob/master/imagens_telas/Screenshot%202023-10-16%20165707.png?raw=true">
 
