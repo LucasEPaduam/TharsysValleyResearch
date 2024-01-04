@@ -18,6 +18,9 @@ Este jogo consta de apenas um labirinto, onde o jogador deve coletar todas as pa
 brancas que o levará a um nível superior onde a velocidade dos inimigos é aumentada
 elevando o nível de dificuldade.
 
+> O arquivo APK para instalação em um smartphone ANDROID está disponível no link abaixo.
+[TharsysValleyResearch_APK](https://www.codeblocks.org/downloads/)
+
 
 ## Objetivo
 O objetivo deste trabalho foi reproduzir um jogo clássico dos anos 80 conhecido como Pac-Man, adaptando a
